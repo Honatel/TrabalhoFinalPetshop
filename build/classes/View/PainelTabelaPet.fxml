@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="painelTabelaPet" prefHeight="529.0" prefWidth="990.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PetsController">
+   <children>
+      <ToolBar prefHeight="40.0" prefWidth="200.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#tratarBotaoCadastrar" text="Cadastrar" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoEditar" text="Editar" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoRemover" text="Remover" />
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+      <TableView fx:id="tableViewPet" prefHeight="488.0" prefWidth="990.0">
+        <columns>
+          <TableColumn fx:id="tableColumnRg" prefWidth="241.0" text="RG" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="311.0" text="Nome Pet" />
+            <TableColumn fx:id="tableColumnTipo" prefWidth="309.0" text="Tipo Animal" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

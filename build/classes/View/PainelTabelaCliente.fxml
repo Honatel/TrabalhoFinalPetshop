@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="painelTabelaCliente" prefHeight="474.0" prefWidth="974.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClienteController">
+   <children>
+      <ToolBar prefHeight="88.0" prefWidth="856.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#tratarBotaoCadastrar" text="Cadastrar" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoEditar" text="Editar" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoRemover" text="Remover" />
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+      <TableView fx:id="tableViewClientes" prefHeight="401.0" prefWidth="909.0">
+        <columns>
+          <TableColumn fx:id="tableColumnRg" prefWidth="172.0" text="RG" />
+          <TableColumn fx:id="tableColumnNome" prefWidth="396.0" text="Nome" />
+            <TableColumn fx:id="tableColumnDataNascimento" prefWidth="183.0" text="Data Nascimento" />
+            <TableColumn fx:id="tableColumnTelfone" prefWidth="222.0" text="Telefone" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

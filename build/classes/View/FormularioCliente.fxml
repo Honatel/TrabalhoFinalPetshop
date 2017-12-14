@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="painelFormularioCliente" prefHeight="384.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClienteController">
+   <children>
+      <GridPane layoutX="92.0" layoutY="45.0" prefHeight="227.0" prefWidth="718.0">
+         <children>
+            <Label prefHeight="30.0" prefWidth="43.0" text="RG:" />
+            <Label text="Nome:" GridPane.rowIndex="1" />
+            <Label text="Telefone:" GridPane.rowIndex="2" />
+            <TextField fx:id="textFieldRg" prefHeight="31.0" prefWidth="754.0" GridPane.columnIndex="1" />
+            <TextField fx:id="textFieldNome" prefHeight="31.0" prefWidth="456.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="textFieldTelefone" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <DatePicker fx:id="datePickerDataNascimento" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Data de Nascimento:" GridPane.rowIndex="3" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="171.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="547.0" minWidth="10.0" prefWidth="547.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Group AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Button layoutX="329.0" layoutY="233.0" mnemonicParsing="false" onAction="#tratarBotaoCancelar" prefWidth="75.0" text="Cancelar" />
+            <Button layoutX="233.0" layoutY="233.0" mnemonicParsing="false" onAction="#tratarBotaoSalvar" prefWidth="75.0" text="Salvar" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

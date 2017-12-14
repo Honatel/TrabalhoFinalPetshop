@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="painelTabelaPet" prefHeight="865.0" prefWidth="1301.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewPrincipalController">
+   <children>
+      <ToolBar prefHeight="54.0" prefWidth="843.0">
+        <items>
+          <Button mnemonicParsing="false" onAction="#tratarBotaoCadastrarCliente" prefHeight="31.0" prefWidth="182.0" text="Cadastrar Clientes" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoCadastrarPets" prefHeight="31.0" prefWidth="167.0" text="Cadastrar Pets" />
+            <Button mnemonicParsing="false" onAction="#tratarBotaoCadastrarServios" prefHeight="31.0" prefWidth="170.0" text="Cadastrar Serviços" />
+        </items>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </ToolBar>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="169.0" prefWidth="1310.0" text="PetShop Alegria" textAlignment="CENTER" textFill="#c4492d">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>
